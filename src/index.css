@@ -51,9 +51,166 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
   body {
     @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+  }
+  
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+  }
+  
+  .animated-gradient {
+    background: linear-gradient(
+      -45deg,
+      hsl(var(--primary) / 0.08),
+      hsl(var(--accent) / 0.08),
+      hsl(var(--secondary) / 0.08),
+      hsl(var(--primary) / 0.08)
+    );
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .floating-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+    animation: float 20s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  .hero-title {
+    animation: heroTitleAnimation 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  @keyframes heroTitleAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .gradient-text {
+    color: hsl(var(--foreground));
+    position: relative;
+    display: inline-block;
+  }
+
+  .gradient-text::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--foreground)) 0%,
+      hsl(222, 65%, 45%) 25%,
+      hsl(222, 75%, 55%) 50%,
+      hsl(222, 65%, 45%) 75%,
+      hsl(var(--foreground)) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 4s ease-in-out infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes gradientText {
+    0%, 100% {
+      background-position: 0% center;
+    }
+    50% {
+      background-position: 100% center;
+    }
+  }
+  
+  @supports not (background-clip: text) {
+    .gradient-text::before {
+      display: none;
+    }
+  }
+
+  .hero-subtitle {
+    animation: heroSubtitleAnimation 1s ease-out 0.3s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  @keyframes heroSubtitleAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-actions {
+    animation: heroActionsAnimation 1s ease-out 0.6s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  @keyframes heroActionsAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

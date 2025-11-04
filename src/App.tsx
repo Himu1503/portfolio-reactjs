@@ -1,34 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Navigation } from "@/components/Navigation"
+import { Hero } from "@/components/Hero"
+import { About } from "@/components/About"
+import { Skills } from "@/components/Skills"
+import { Projects } from "@/components/Projects"
+import { Contact } from "@/components/Contact"
+import "./App.css"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="min-h-screen relative overflow-hidden">
+      <div className="fixed inset-0 -z-10 animated-gradient bg-grid-pattern" />
+      <div className="fixed top-0 left-1/4 w-96 h-96 floating-blob bg-primary/20 -z-10" style={{ animationDelay: '0s' }} />
+      <div className="fixed bottom-0 right-1/4 w-96 h-96 floating-blob bg-accent/20 -z-10" style={{ animationDelay: '5s' }} />
+      <div className="fixed top-1/2 right-0 w-80 h-80 floating-blob bg-secondary/20 -z-10" style={{ animationDelay: '10s' }} />
+      <Navigation />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </div>
   )
 }
 
