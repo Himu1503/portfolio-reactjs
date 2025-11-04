@@ -3,14 +3,14 @@ import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
-  // {
-  //   title: "E-Commerce Platform",
-  //   description: "A full-stack e-commerce solution with payment integration and admin dashboard.",
-  //   tech: ["React", "Node.js", "MongoDB"],
-  //   github: "https://github.com",
-  //   demo: "https://example.com",
-  //   gradient: "from-blue-500 via-purple-500 to-pink-500",
-  // },
+  {
+    title: "Portfolio Website",
+    description: "Full Stack Developer Portfolio Website built using React, Node.js, Tailwind CSS.",
+    tech: ["React", "Node.js","Tailwind CSS"],
+    github: "https://github.com/Himu1503/portfolio-reactjs",
+    demo: "https://portfolio-reactjs-blond-nine.vercel.app/",
+    gradient: "from-blue-500 via-purple-500 to-pink-500",
+  },
   {
     title: "Event Management App",
     description: "A collaborative Event management application for companies to manage their events and attendees.",
