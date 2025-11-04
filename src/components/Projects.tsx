@@ -3,14 +3,14 @@ import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
-  {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with payment integration and admin dashboard.",
-    tech: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com",
-    demo: "https://example.com",
-    gradient: "from-blue-500 via-purple-500 to-pink-500",
-  },
+  // {
+  //   title: "E-Commerce Platform",
+  //   description: "A full-stack e-commerce solution with payment integration and admin dashboard.",
+  //   tech: ["React", "Node.js", "MongoDB"],
+  //   github: "https://github.com",
+  //   demo: "https://example.com",
+  //   gradient: "from-blue-500 via-purple-500 to-pink-500",
+  // },
   {
     title: "Event Management App",
     description: "A collaborative Event management application for companies to manage their events and attendees.",
@@ -18,15 +18,15 @@ const projects = [
     github: "https://github.com/Himu1503/full-stack-technical-test",
     demo: " https://pulse-events-test-solution.vercel.app/",
     gradient: "from-emerald-500 via-teal-500 to-cyan-500",
-  },
-  {
-    title: "Social Media Dashboard",
-    description: "Analytics dashboard for social media metrics with data visualization.",
-    tech: ["Next.js", "Tailwind CSS", "Chart.js"],
-    github: "https://github.com",
-    demo: "https://example.com",
-    gradient: "from-orange-500 via-red-500 to-pink-500",
-  },
+  }
+  // {
+  //   title: "Social Media Dashboard",
+  //   description: "Analytics dashboard for social media metrics with data visualization.",
+  //   tech: ["Next.js", "Tailwind CSS", "Chart.js"],
+  //   github: "https://github.com",
+  //   demo: "https://example.com",
+  //   gradient: "from-orange-500 via-red-500 to-pink-500",
+  // },
 ]
 
 export function Projects() {
