@@ -6,9 +6,8 @@ const projects = [
   {
     title: "Sport Betting Application",
     description: "Sports Betting Application deployed using Docker",
-    tech: ["React", "FastAPI","Tailwind CSS,TypeScript"],
-    github: "https://github.com/Himu1503/portfolio-reactjs",
-    demo: "https://portfolio-reactjs-blond-nine.vercel.app/",
+    tech: ["React", "FastAPI","Tailwind CSS","TypeScript"],
+    github: "https://github.com/Himu1503/Sports-Betting-Admin-Platform",
     gradient: "from-blue-500 via-purple-500 to-pink-500",
   },
   {
