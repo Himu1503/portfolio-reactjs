@@ -4,9 +4,9 @@ import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "Full Stack Developer Portfolio Website built using React, Node.js, Tailwind CSS.",
-    tech: ["React", "Node.js","Tailwind CSS"],
+    title: "Sport Betting Application",
+    description: "Sports Betting Application deployed using Docker",
+    tech: ["React", "FastAPI","Tailwind CSS,TypeScript"],
     github: "https://github.com/Himu1503/portfolio-reactjs",
     demo: "https://portfolio-reactjs-blond-nine.vercel.app/",
     gradient: "from-blue-500 via-purple-500 to-pink-500",
@@ -19,14 +19,6 @@ const projects = [
     demo: " https://pulse-events-test-solution.vercel.app/",
     gradient: "from-emerald-500 via-teal-500 to-cyan-500",
   }
-  // {
-  //   title: "Social Media Dashboard",
-  //   description: "Analytics dashboard for social media metrics with data visualization.",
-  //   tech: ["Next.js", "Tailwind CSS", "Chart.js"],
-  //   github: "https://github.com",
-  //   demo: "https://example.com",
-  //   gradient: "from-orange-500 via-red-500 to-pink-500",
-  // },
 ]
 
 export function Projects() {
