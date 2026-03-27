@@ -16,7 +16,7 @@ function App() {
       <div className="fixed bottom-1/4 left-0 w-72 h-72 floating-blob bg-gradient-to-br from-purple-400/20 to-pink-400/20 -z-10" style={{ animationDelay: '7s' }} />
       <Navigation />
       <Hero />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Projects />
       <Contact />

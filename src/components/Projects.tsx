@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "Event Management App",
-    description: "A collaborative Event management application for companies to manage their events and attendees.",
+    description: "A collaborative Event management application for organizations to manage their events and attendees.",
     tech: ["React", "TypeScript", "Node.js"],
     github: "https://github.com/Himu1503/full-stack-technical-test",
     demo: " https://pulse-events-test-solution.vercel.app/",
