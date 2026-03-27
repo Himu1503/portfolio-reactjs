@@ -5,8 +5,8 @@ export function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative z-10">
       <div className="text-center space-y-6 max-w-4xl relative z-10">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight hero-title gradient-text" data-text="Full Stack Developer">
-          Full Stack Developer
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight hero-title gradient-text" data-text="Himanshu Saxena">
+          Himanshu Saxena
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground hero-subtitle">
           Building software solutions to solve complex problems.
