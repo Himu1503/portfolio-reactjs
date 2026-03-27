@@ -33,7 +33,7 @@ export function Contact() {
               </div>
               <div className="flex items-center gap-4">
                 <MapPin className="w-5 h-5" />
-                <span className="text-muted-foreground">📍 United Kingdom</span>
+                <span className="text-muted-foreground">📍 London,United Kingdom</span>
               </div>
             </div>
             <Button size="lg" className="w-full" href="mailto:himanshusaxenaunreal@gmail.com">
