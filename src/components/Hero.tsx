@@ -9,7 +9,7 @@ export function Hero() {
           Himanshu Saxena
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground hero-subtitle">
-          Building software solutions to solve complex problems.
+          Turning ideas into powerful digital experiences
         </p>
         <div className="flex gap-4 justify-center pt-4 hero-actions">
           <Button size="lg" href="#contact">
