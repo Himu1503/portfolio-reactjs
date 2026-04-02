@@ -1,6 +1,10 @@
-import { useEffect, useState } from "react"
+import { lazy, Suspense, useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail } from "lucide-react"
+
+const HeroThreeScene = lazy(() =>
+  import("@/components/HeroThreeScene").then((module) => ({ default: module.HeroThreeScene }))
+)
 
 export function Hero() {
   const fullName = "Himanshu Saxena"
@@ -37,8 +41,11 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative z-10">
+      <Suspense fallback={null}>
+        <HeroThreeScene />
+      </Suspense>
       <div className="text-center space-y-7 max-w-4xl relative z-10">
-        <p className="hero-chip inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-cyan-200 backdrop-blur">
+        <p className="hero-chip inline-flex items-center rounded-full border border-amber-200/25 bg-slate-900/50 px-4 py-2 text-sm text-amber-100 backdrop-blur">
           Software Engineer • React • TypeScript • FastAPI
         </p>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight hero-title">
@@ -48,10 +55,10 @@ export function Hero() {
           Turning ideas into sleek, high-performance digital products with modern engineering.
         </p>
         <div className="flex gap-4 justify-center pt-2 hero-actions flex-wrap">
-          <Button size="lg" className="shadow-lg shadow-cyan-500/20" href="#contact">
+          <Button size="lg" className="shadow-lg shadow-amber-400/20" href="#contact">
             Get In Touch
           </Button>
-          <Button size="lg" variant="outline" className="border-white/20 bg-white/5 hover:bg-white/10" href="#projects">
+          <Button size="lg" variant="outline" className="border-amber-200/30 bg-slate-900/45 hover:bg-amber-100/10 hover:text-amber-100" href="#projects">
             View Projects
           </Button>
         </div>
