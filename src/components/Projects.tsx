@@ -19,6 +19,14 @@ const projects = [
     github: "https://github.com/Himu1503/full-stack-technical-test",
     demo: " https://pulse-events-test-solution.vercel.app/",
     gradient: "from-emerald-500 via-teal-500 to-cyan-500",
+  },
+
+    {
+    title: "Garage Flow",
+    description: "GarageFlow is a FastAPI backend for managing garage operations: users, customers, vehicles, bookings, and auth.",
+    tech: ["FastAPI", "Redis", "Postgresql"],
+    github: "https://github.com/Himu1503/GarageFlow",
+    gradient: "from-green-500 via-teal-500 to-cyan-500",
   }
 ]
 
